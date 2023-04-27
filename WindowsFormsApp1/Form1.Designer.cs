@@ -29,9 +29,8 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btn_ServerStart = new System.Windows.Forms.Button();
             this.listBox1 = new System.Windows.Forms.ListBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -39,33 +38,27 @@
             this.button5 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button1
+            // btn_ServerStart
             // 
-            this.button1.Location = new System.Drawing.Point(12, 377);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(121, 61);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Server START";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btn_ServerStart.Location = new System.Drawing.Point(8, 251);
+            this.btn_ServerStart.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_ServerStart.Name = "btn_ServerStart";
+            this.btn_ServerStart.Size = new System.Drawing.Size(81, 41);
+            this.btn_ServerStart.TabIndex = 0;
+            this.btn_ServerStart.Text = "Server START";
+            this.btn_ServerStart.UseVisualStyleBackColor = true;
+            this.btn_ServerStart.Click += new System.EventHandler(this.button1_Click);
             // 
             // listBox1
             // 
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 18;
-            this.listBox1.Location = new System.Drawing.Point(549, 13);
+            this.listBox1.ItemHeight = 12;
+            this.listBox1.Location = new System.Drawing.Point(11, 11);
+            this.listBox1.Margin = new System.Windows.Forms.Padding(2);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(251, 310);
+            this.listBox1.Size = new System.Drawing.Size(169, 208);
             this.listBox1.TabIndex = 1;
             this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(219, 151);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 29);
-            this.textBox1.TabIndex = 2;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // contextMenuStrip1
             // 
@@ -76,64 +69,66 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(172, 377);
+            this.button2.Location = new System.Drawing.Point(115, 251);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(121, 61);
+            this.button2.Size = new System.Drawing.Size(81, 41);
             this.button2.TabIndex = 4;
             this.button2.Text = "Server STOP";
             this.button2.UseVisualStyleBackColor = true;
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(332, 377);
+            this.button3.Location = new System.Drawing.Point(221, 251);
+            this.button3.Margin = new System.Windows.Forms.Padding(2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(121, 61);
+            this.button3.Size = new System.Drawing.Size(81, 41);
             this.button3.TabIndex = 5;
             this.button3.Text = "Game START";
             this.button3.UseVisualStyleBackColor = true;
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(492, 377);
+            this.button4.Location = new System.Drawing.Point(328, 251);
+            this.button4.Margin = new System.Windows.Forms.Padding(2);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(121, 61);
+            this.button4.Size = new System.Drawing.Size(81, 41);
             this.button4.TabIndex = 6;
             this.button4.Text = "Game STOP";
             this.button4.UseVisualStyleBackColor = true;
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(652, 377);
+            this.button5.Location = new System.Drawing.Point(435, 251);
+            this.button5.Margin = new System.Windows.Forms.Padding(2);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(121, 61);
+            this.button5.Size = new System.Drawing.Size(81, 41);
             this.button5.TabIndex = 7;
             this.button5.Text = "EXIT";
             this.button5.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(533, 300);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.listBox1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btn_ServerStart);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_ServerStart;
         private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;

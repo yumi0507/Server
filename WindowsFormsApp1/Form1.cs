@@ -29,10 +29,7 @@ namespace WindowsFormsApp1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (!string.IsNullOrEmpty(textBox1.Text))
-            {
-                listBox1.Items.Add(textBox1.Text);
-            }
+
         }
 
         private void contextMenuStrip1_Opening(object sender, CancelEventArgs e)
